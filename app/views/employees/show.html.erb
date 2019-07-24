@@ -1,0 +1,16 @@
+<img src="<%= @employee.img_url %>">
+<br>
+<%= @employee.first_name %><br>
+<%= @employee.last_name %><br>
+<%= @employee.title %><br>
+<%= @employee.alias %><br>
+<%= @employee.office %><br>
+<%= @employee.dog.name %><br>
+
+
+
+
+<%= link_to 'Edit', edit_employee_path(@employee) %> |
+<%= link_to 'Back', employees_path %>
+
+
