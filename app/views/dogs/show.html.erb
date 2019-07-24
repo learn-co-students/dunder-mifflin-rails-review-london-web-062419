@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+<h2><%= @dog.name %></h2>
+<h2><%= @dog.breed %></h2>
+<h2><%= @dog.age %></h2>
+<h2><% @dog.employees.map do |employee| %>
+<%= employee.first_name %>
+<% end %>
+
+
+
+<%= link_to 'Edit', edit_dog_path(@dog) %> |
+<%= link_to 'Back', dogs_path %>
