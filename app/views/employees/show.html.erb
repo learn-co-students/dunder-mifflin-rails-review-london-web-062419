@@ -1,0 +1,11 @@
+<img src=<%=@employee.img_url%> class="img-fluid" style="width: 40vw" alt="me"><br>
+<h1>Name: <%= "#{@employee.first_name} #{@employee.last_name}" %></h1><br>
+<h1>Alias: <%=  @employee.alias %></h1><br>
+<h1>Title: <%=  @employee.title %></h1><br>
+<h1>Office: <%=  @employee.office %></h1><br>
+<h1>Dog: <%=  @employee.dog.name %></h1><br>
+
+<button class="btn btn-info" style="margin: 1em"> <a href="/employees/<%=@employee.id%>/edit"> Edit</a></button>
+<button class="btn btn-info" style="margin: 1em"> <a href="/employees"> Back</a></button>
+<!-- <%= link_to 'Edit', edit_employee_path(@employee) %> -->
+<!-- <%= link_to 'Back', employees_path %> -->

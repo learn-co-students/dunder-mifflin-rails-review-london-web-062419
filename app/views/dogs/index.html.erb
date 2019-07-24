@@ -1,0 +1,12 @@
+<h1>Welcome to my kennel of employees</h1>
+
+<ul>
+<% @dogs.each do |dog| %>
+<%= link_to dog.name, dog %>
+<br>
+<% end %>
+</ul>
+<div>
+<button><a href="/dogs/new">Add a Dog</a></button><br>
+</div>
+
